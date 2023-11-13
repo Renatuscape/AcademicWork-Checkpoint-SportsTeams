@@ -41,5 +41,13 @@
         {
             return $"{Name}";
         }
+
+        //Brukte de siste 40 min på å finne ut hvordan jeg skulle bruke operator overload og rakk ikke legge til testing
+        public static Team operator +(Team team, Player player)
+        {
+            team.Players.Add(player);
+
+            return team;
+        }
     }
 }

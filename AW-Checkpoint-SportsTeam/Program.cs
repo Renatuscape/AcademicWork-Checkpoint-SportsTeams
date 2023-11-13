@@ -8,6 +8,7 @@
 
             Team myTeam = new("The Miskatonics");
 
+            myTeam = myTeam + new Player(8, "Rod Usher");
             myTeam.PrintTeam();
         }
     }
