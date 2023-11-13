@@ -10,11 +10,9 @@
             Name = name;
         }
 
-        public void PrintTeam()
+        public void CreateDummyTeam()
         {
-            if (Players.Count < 1)
-            {
-                Players = new() {
+            Players = new() {
                 new (1, "Henry Armitage"),
                 new (2, "Randolph Carter"),
                 new (3, "Obed Marsh"),
@@ -23,8 +21,15 @@
                 new (6, "William Dyer"),
                 new Star(7, "Abdul Alhazred", "Used to be an author, now he plays sportsball!"),
             };
+        }
 
+        public void PrintTeam()
+        {
+            if (Players.Count < 1)
+            {
+                CreateDummyTeam();
             }
+
             Console.WriteLine($"\t*** {Name} ***\n");
             foreach (var player in Players)
             {
