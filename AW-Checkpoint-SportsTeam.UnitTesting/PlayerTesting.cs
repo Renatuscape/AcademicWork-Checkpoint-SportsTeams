@@ -8,7 +8,6 @@ namespace AW_Checkpoint_SportsTeam.UnitTesting
 {
     public class PlayerTesting
     {
-
         [TestCase(0, 6)]
         [TestCase(2, 3)]
         [TestCase(5, 4)]
